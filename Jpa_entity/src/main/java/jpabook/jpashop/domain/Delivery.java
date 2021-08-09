@@ -2,11 +2,7 @@ package jpabook.jpashop.domain;
 
 import lombok.Getter;
 import lombok.Setter;
-<<<<<<< HEAD
 
-=======
-import org.springframework.data.annotation.Id;
->>>>>>> e490ff9299ca44c566cb70da4018ec9a5286a86c
 
 import javax.persistence.*;
 
