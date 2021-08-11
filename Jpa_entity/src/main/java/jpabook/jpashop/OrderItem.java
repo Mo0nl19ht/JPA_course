@@ -1,4 +1,4 @@
-package jpabook.jpashop.domain;
+package jpabook.jpashop;
 
 
 import jpabook.jpashop.domain.item.Item;
