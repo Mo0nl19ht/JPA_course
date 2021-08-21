@@ -4,7 +4,7 @@ import exception.NotenoughStockException;
 import jpabook.jpashop.Address;
 import jpabook.jpashop.Member;
 import jpabook.jpashop.Order;
-import jpabook.jpashop.OrderStatus;
+import jpabook.jpashop.domain.OrderStatus;
 import jpabook.jpashop.domain.item.Book;
 import jpabook.jpashop.domain.item.Item;
 import jpabook.jpashop.repository.OrderRepository;
