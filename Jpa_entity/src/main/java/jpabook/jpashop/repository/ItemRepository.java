@@ -20,6 +20,7 @@ public class ItemRepository {
         else{
             em.merge(item);
             //이미 등록 되었을때 업데이트같은 개념
+            //쓰지 않는다.
         }
     }
     public Item findOne(Long id){

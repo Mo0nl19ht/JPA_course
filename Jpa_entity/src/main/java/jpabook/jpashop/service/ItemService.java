@@ -19,6 +19,26 @@ public class ItemService {
     public void saveItem(Item item){
         itemRepository.save(item);
     }
+
+    @Transactional
+    public void updateItem(Long itemid,String name,int price,int stockQuantity){
+        //파라미터 많아지면 dto주입해서 새로 클래스 만든다.
+        // 그래서 dto.name이렇게
+
+        Item findItem = itemRepository.findOne(itemid);
+        findItem.setPrice(price);
+        findItem.setName(name);
+        findItem.setStockQuantity(stockQuantity);
+
+        //변경시에도 findItem.change(price,name,stockQuantity);
+        //이렇게 엔티티에서 추적가능하게 하는것이 좋음
+
+    }
+    //실제로는  merge쓰면안된다
+    // merge쓰면 입력되지 않은 속성은 NULL처리한다
+    //완전히
+
+
     public List<Item> findItems(){
         return itemRepository.findAll();
     }
